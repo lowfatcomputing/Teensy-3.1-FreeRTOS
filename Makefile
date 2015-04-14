@@ -16,14 +16,14 @@ OPTIONS += -D__MK20DX256__ -DARDUIO=104
 #************************************************************************
 
 # path location for Teensy Loader, teensy_post_compile and teensy_reboot
-TOOLSPATH = ../../../tools   # on Linux
+TOOLSPATH ?= ../../../tools   # on Linux
 #TOOLSPATH = ../../../tools/avr/bin   # on Mac or Windows
 
 # path location for Arduino libraries (currently not used)
-LIBRARYPATH = ../../../../libraries
+LIBRARYPATH ?= ../../../../libraries
 
 # path location for the arm-none-eabi compiler
-COMPILERPATH = ../../../tools/arm-none-eabi/bin
+COMPILERPATH ?= ../../../tools/arm-none-eabi/bin
 
 #************************************************************************
 # Settings below this point usually do not need to be edited
